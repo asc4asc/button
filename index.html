@@ -19,20 +19,17 @@
     
 <center>    
 test me please: <p id="demo"></p>
-    
+
+<button>A</button>
+<button>B</button>
+<button>C</button>
 <script>
-
-let i=1, s="";
-for (i=0; i<10; i++) { 
-  doit();
-}
-
-function doit() {
-  s = "Hello JavaS"+i+"<br>"+s; 
-  document.getElementById("demo").innerHTML = s;
-  console.log("Hello JavaScript!",i,"\n");
-}
-</script> 
-    
+  document.body.addEventListener("click", event => {
+    if (event.target.nodeName == "BUTTON") {
+      console.log("Clicked", event.target.textContent);
+    }
+  });
+</script>    
+   
 </body>
 </html>
