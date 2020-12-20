@@ -29,6 +29,7 @@ test me please: <p id="demo"></p>
 <button>F</button>
    
 <script>
+  "use strict";  
   document.body.addEventListener("click", event => {
     if (event.target.nodeName == "BUTTON") {
       console.log("Clicked", event.target.textContent);
